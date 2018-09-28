@@ -1,4 +1,4 @@
-# Embed a Oracle Data Visualization dashboard in Oracle Jet application
+# Embedding Oracle Data Visualization dashboard in Oracle Jet application
 
 ## Introduction
 
