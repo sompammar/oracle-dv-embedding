@@ -16,4 +16,6 @@ grunt serve
 
 Update the dashboard details in ```ojet-sample/src/js/viewModels/dashboard.js``` file. If you want to use the test dashboard, you can import it into your DV from following location ```dv-project/TestDashboard.dva```
 
+![Image](images/image1.png?raw=true "Web application with embedded dashboard")
+
 More details about embedding visualizations at this [link](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/embedding-visualizations-web-pages-using-jet.html)
