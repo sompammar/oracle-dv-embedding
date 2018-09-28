@@ -1,0 +1,52 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-applayout-page">
+  <div class="oj-applayout-fixed-top">
+    <!--
+       ** Oracle JET V3.2.0 hybrid mobile application header pattern.
+       ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+       ** more information on how to use this pattern.
+    -->
+    <header role="banner" class="oj-hybrid-applayout-header" data-bind="ojModule: headerConfig">
+    </header>
+  </div>
+  <!-- This is where your main page content will be loaded -->
+  <div class="oj-applayout-content">
+    <div role="main" class="oj-hybrid-applayout-content">
+      <div class="oj-hybrid-padding">
+        <div class="oj-flex">
+          <div class="oj-panel oj-margin demo-panel-customizations">
+
+
+            <label for="storeSearch">Stores</label>
+
+            <input id="storeSearch" placeholder="All Stores" data-bind="ojComponent: {
+              component: 'ojCombobox',
+              multiple: true,
+              value: store,
+              options: stores,
+              rootAttributes: {style:'max-width: 200em'}}">
+
+            <datalist id="stores">
+              <!-- ko foreach: stores -->
+              <option data-bind="value:value, text:label"></option>
+              <!-- /ko -->
+            </datalist>
+
+            <div data-bind="with:dvProjectDetails, style: {width: '99vw', height: '99vh'}">
+              <!-- <div data-bind="style: {width: $data.show()  ? '99vw' : '0px', height: $data.show()  ? '99vh' : '0px'}"> -->
+              <oracle-dv id="dv1" filters="{{filters}}" project-path="{{projectPath}}" active-page="canvas" project-options="{{projectOptions}}"
+                active-tab-id="{{tabId}}"></oracle-dv>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
