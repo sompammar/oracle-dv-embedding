@@ -1,3 +1,9 @@
+<!--
+  Title: Embedding Oracle DV (Data Visualization) dashboards in Oracle Jet web application
+  Description: Describes how to embed DV dashboards in web applications
+  Author: Som Pammar
+  -->
+
 # Embedding Oracle Data Visualization dashboard in Oracle Jet application
 
 ## Introduction
